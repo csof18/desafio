@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <!--tipografia-->   
+    <link rel = "preconnect" href = "https://fonts.gstatic.com">
+    <link href = "https://fonts.googleapis.com/css2? family = Akaya + Telivigala & display = swap" rel = "hoja de estilo">
+    
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    
+    <!--archivo css-->
+    <link rel="stylesheet" href="../assets/css/desafios.css">
+    
+    <!--SEO-->
+    <meta name="keywords" content="productos, fotos"> <!--palabra clave para que nos ubiquen/ cambia de acuerdo al contenido de cada html que formen parte de la web-->
+    <title>Productos/Amelia Plantas y Flores</title>
+    <meta name="description" content="Somos una floreria,estamos ubicados en Villa Devoto, frente a la plaza Arenales nos destacamos por nuestros ramos, plantas y regaleria"><!--breve descripcion de que se va a tratar la pag. este deberia ser en todos sus html iguales-->
+</head>
+
+<body>
+    <header>
+        <!--otro menu con bt*/
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle d-sm-block d-md-none" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Menú
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="nav-link" href="../index.html">Inicio</a>
+                <a class="nav-link active" href="./productos.html">Productos</a>
+                <a class="nav-link" href="./nuestrosPrecios.html">Precios</a>
+                <a class="nav-link" href="./formulario.html">Contactanos</a>
+                <a class="nav-link" href="./envio.html">Envios</a>
+            </div>
+        </div>
+    -->
+<!--primer menu que hice yo*/
+            <div>
+                <nav class="tamaño margen">
+                    <ul class="lista">
+                        <li class="navFlotante"><a href="../index.html">Inicio</a></li>
+                        <li class="navFlotante"><a href="./nuestrosPrecios.html">Precios</a>
+                            <ul class="lista">
+                                <li class="navFlotante"><a href="./nuestrosPrecios.html" class="submenu">Ramos</a></li>
+                                <li class="navFlotante"><a href="./nuestrosPrecios.html" class="submenu">Velas</a></li>
+                                <li class="navFlotante"><a href="./nuestrosPrecios.html" class="submenu">Plantas</a></li>
+                                <li class="navFlotante"><a href="./nuestrosPrecios.html" class="submenu">Macetas</a></li>
+                            </ul>
+                        </li>
+                        <li class="navFlotante"><a href="./hacenosTuPedido.html">Pedidos</a></li>
+                        <li class="navFlotante"><a href="./envio.html">Envios</a></li>
+                    </ul>
+                </nav>
+            </div>
+        -->
+        <ul class="nav nav-tabs mt-5 smNoVer">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./nuestrosPrecios.html">Precios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./formulario.html">Contactanos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./envio.html">Envios</a>
+            </li>
+        </ul>
+
+        <!--menu para sm max-->
+        <div class="pos-f-t  d-sm-block d-md-none">
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-dark p-4">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                    <a class="nav-link active" href="./productos.html">Productos</a>
+                    <a class="nav-link" href="./nuestrosPrecios.html">Precios</a>
+                    <a class="nav-link" href="./formulario.html">Contactanos</a>
+                    <a class="nav-link" href="./envio.html">Envios</a>
+                </div>
+            </div>
+            <nav class="navbar navbar-dark bg-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+    
+    <section>
+        <div class="border-bottom mt-5">
+            <h2>Destacados</h2>
+        </div>
+        <div class="margen papaFila">
+            <div class="transformacion">
+                <div>
+                    <img src="https://picsum.photos/250/250?random=1" alt="Fotografía Gastronomica" alt="imagen aleatoria" class="radiusTodo animacion2">
+                </div>
+                <div>
+                    <h3 class="border-bottom mt-2">Ramos</h3>
+                    <hr>
+                    <p class="tamañoDiv">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quo dignissimos tempora odit cum possimus, labore atque quisquam assumenda eos.</p>
+                </div>
+            </div>
+            
+            <div class="lgNoVer">
+                <div>
+                    <img src="https://picsum.photos/250/250?random=2" alt="imagen aleatoria" class="radiusTodo animacion">
+                </div>
+                <div>
+                    <h3 class="border-bottom mt-2">Ramos</h3>
+                    <hr>
+                    <p class="tamañoDiv">Lorem ipsum dolor sit amet consectetur,adipisicing elit. Aliquam beatae quisquam accusantium assumenda! Vitae remnecessitatibus laborum recusandae quasi dolorum ducimus dignissimosblanditiis, sapiente in qui eos. Adipisci, saepe explicabo.</p>
+                </div>
+            </div>
+
+            <div class="transformacion smNoVer">
+                <div>
+                    <img src="https://picsum.photos/250/250?random=3" alt="imagen aleatoria" class="radiusTodo animacion2">
+                </div>
+                <div>
+                    <h3 class="border-bottom mt-2">Ramos</h3>
+                    <hr>
+                    <p class="tamañoDiv">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quo dignissimos tempora odit cum possimus, labore atque quisquam assumenda eos.</p>
+                </div>
+            </div>
+            
+            <div class="lgNoVer smNoVer">
+                <div>
+                    <img src="https://picsum.photos/250/250?random=4" alt="imagen aleatoria" class="radiusTodo animacion">
+                </div>
+                <div>
+                    <h3 class="border-bottom mt-2">Ramos</h3>
+                    <hr>
+                    <p class="tamañoDiv">Lorem ipsum dolor sit amet consectetur,adipisicing elit. Aliquam beatae quisquam accusantium assumenda! Vitae remnecessitatibus laborum recusandae quasi dolorum ducimus dignissimosblanditiis, sapiente in qui eos. Adipisci, saepe explicabo.</p>
+                </div>
+            </div>
+
+            <div class="transformacion mdNoVer smNoVer">
+                <div>
+                    <img src="https://picsum.photos/250/250?random=5" alt="imagen aleatoria" class="radiusTodo animacion2">
+                </div>
+                <div>
+                    <h3 class="border-bottom mt-2">Ramos</h3>
+                    <hr>
+                    <p class="tamañoDiv">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quo dignissimos tempora odit cum possimus, labore atque quisquam assumenda eos.</p>
+                </div>
+            </div>
+        </div> 
+        
+        <div class="border-bottom mb-5">
+            <h2>Galeria</h2>
+        </div>
+
+            <div class="papaFila">    
+                <img src="https://picsum.photos/200/300?random=8" alt="imagen aleatoria" class="radiusArribaIzquierda mdNoVer smNoVer">
+                
+                <img src="https://picsum.photos/200/300?random=9" alt="imagen aleatoria" class="tamañoSm">
+                
+                <img src="https://picsum.photos/200/300?random=10" alt="imagen aleatoria" class="tamañoSm">
+                
+                <img src="https://picsum.photos/200/300?random=11" alt="imagen aleatoria" class="tamañoSm">
+                
+                <img src="https://picsum.photos/200/300?random=12" alt="imagen aleatoria" class="tamañoSm">
+                
+                <img src="https://picsum.photos/200/300?random=13" alt="imagen aleatoria" class="tamañoSm">
+                
+                <img src="https://picsum.photos/200/300?random=14" alt="imagen aleatoria" class="radiusArribaDerecha mdNoVer smNoVer">
+                
+                <img src="https://picsum.photos/200/300?random=15" alt="imagen aleatoria" class="tamañoSm">
+                
+                <img src="https://picsum.photos/200/300?random=16" alt="imagen aleatoria" class="tamañoSm">
+                
+                <img src="https://picsum.photos/200/300?random=17" alt="imagen aleatoria" class="mdNoVer smNoVer">
+                
+                <img src="https://picsum.photos/200/300?random=18" alt="imagen aleatoria" class="mdNoVer smNoVer">
+                
+                <img src="https://picsum.photos/200/300?random=19" alt="imagen aleatoria" class="mdNoVer smNoVer">
+                
+                <img src="https://picsum.photos/200/300?random=20" alt="imagen aleatoria" class="mdNoVer smNoVer">
+                
+                <img src="https://picsum.photos/200/300?random=21" alt="imagen aleatoria" class="mdNoVer smNoVer">
+                
+                <img src="https://picsum.photos/200/300?random=22" alt="imagen aleatoria" class="radiusAbajoIzquierda mdNoVer smNoVer">
+                
+                <img src="https://picsum.photos/200/300?random=23" alt="imagen aleatoria" class="tamañoSm">
+                
+                <img src="https://picsum.photos/200/300?random=24" alt="imagen aleatoria" class="tamañoSm">
+                
+                <img src="https://picsum.photos/200/300?random=25" alt="imagen aleatoria" class="tamañoSm">
+                
+                <img src="https://picsum.photos/200/300?random=26" alt="imagen aleatoria" class="tamañoSm">
+                
+                <img src="https://picsum.photos/200/300?random=27" alt="imagen aleatoria" class="tamañoSm mdNoVer">
+                
+                <img src="https://picsum.photos/200/300?random=28" alt="imagen aleatoria" class="radiusAbajoDerecha mdNoVer smNoVer lgNoVer">
+            </div>
+    </section>
+    
+    <footer class="tamaño mt-5 footerPegado">
+        <div class="border-bottom">
+            <h2>Contactanos</h2>
+        </div>
+
+        <div class="redesSociales flexFooter m-2">
+            <a href="https://www.instagram.com/ameliaplantasyflores/?igshid=1rbdxyvxvo9dt" target="_blank" class="iconos" >Instagram</a>
+            <a href="https://www.facebook.com/Amelia-Plantas-y-Flores-100927535408509" target="_blank" class="iconos" >Facebook</a>
+            <a href="#" target="_blank" class="iconos" >Mail</a>
+        </div>
+    </footer>
+    <!--javaScript de bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    
+</body>
+</html>

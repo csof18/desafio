@@ -1,0 +1,419 @@
+/*reseteo*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*fondo*/
+body {
+  background-color:  rgba(0, 0, 0, 0.856);
+    color: white;
+    width: 100%; /*ancho*/
+    height: 100vh; /*alto*/
+}
+
+/*header*/
+
+#logo {
+    font-size: 25pt;
+}
+
+/*bootstrap*/
+header ul li a{
+    color: white;
+}
+header ul li a:hover{
+    color: rgba(194, 189, 189, 0.808);
+}/*aca termina*/
+
+
+/*GRADIENTE*/
+.degradado{
+    background-image: linear-gradient(to right, rgb(231, 225, 225), rgb(143, 132, 132), rgb(80, 72, 72), black);
+    color: black;
+}
+
+nav {
+    font-family: 'Nunito', sans-serif;
+    font-style: italic;
+    font-weight: 200;
+    text-align: right;
+
+}
+
+nav a{
+    outline: none;
+    text-decoration: none;
+    padding: 2pt 1pt 0;
+}
+
+nav a:link{
+    color: rgba(255, 255, 255, 0.959);
+}
+
+nav a:visited {
+    color: rgba(171, 208, 214, 0.644);    
+}
+nav a:hover {
+    color: rgb(107, 102, 102);
+}
+
+.lista {
+    list-style: none;
+}
+
+/*box model*/
+.navFlotante {
+    float: left;
+}    
+
+nav ul {
+    list-style-type: none;
+    margin-top: -5px;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+}
+
+li a {
+    display: block;
+    padding: 10px;
+    
+}
+
+/*con estos codigos logro que el submenu se vea solo cuando me ubico en él*/
+li:hover > ul{
+    display: block;
+    margin-top: -5px;
+    padding: 1px;
+}
+
+li ul{
+    display: none;
+    position: absolute;
+}
+.submenu {
+    padding: 0 5px;
+}
+
+li > ul li a{
+    margin-left: -4px;
+    
+}
+/* etiquetas*/
+h1 {
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    font-weight: 300;
+}
+
+h2 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    font-size: 20pt;
+    margin-left: 1%;
+}
+
+h3 {
+    margin-left: 1%;
+}
+p {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    text-align: justify;
+}
+
+table {
+    border: solid 1px white;
+    
+    list-style-position: inside;
+}
+
+iframe {
+    width: 100%;
+}
+
+a{
+    color: white;
+}
+
+/* clases genericas*/
+
+
+/*VER DE SACAR
+.tamaño {
+    font-size: 16pt;
+}
+
+.margen {
+    margin: 2%;
+}
+
+.margenTop {
+    margin-top: 2%;
+}
+.justificado {
+    text-align: justify;    
+}
+*/
+.bloque {
+    display: block;
+    width: 100%;
+}
+
+
+.floatDerecha {
+    float: right;
+    
+}
+
+.floatIzquierda {
+    float: left;
+}
+
+.ancho {
+    width: 50%;
+}
+
+.clearAbajo {
+    clear: both;
+}
+
+/*texto introductorio del index*/
+.borde {
+    border: inset #ffffff57;
+    padding: 1%;
+}
+
+/*flexbox */
+.tamañoDiv {
+    width: 250px;
+    height: 250px;
+}
+.padreFlex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.papaFila {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
+
+
+/*imagenes*/
+/*TRANSFORMACIONES*/
+
+.transformacion{
+    transform: translateY(100px);
+}
+/*ANIMACION*/
+.animacion{
+    animation-name: efecto;
+    animation-iteration-count: 1; /*le pongo cuantas veces quiero que se repita*/
+    animation-timing-function: linear;
+    animation-duration: 4s; /*cuanto quiero que dure*/
+    animation-delay: 2s; /*cuando quiero que arranque la animacion*/
+}
+/*Linea del tiempo de la animacion*/
+@keyframes efecto{
+    0% {width: 250px;
+        height: 250px;
+
+    }
+    25%{
+        width: 300px;
+        height: 300px;
+    }
+    50%{
+        width: 350px;
+        height: 350px;
+        border-radius: 3%;
+        box-shadow: 2pt 2pt 10pt #ffffffd0;
+    }
+    75%{
+        width: 300px;
+        height: 300px;
+        border-radius: 3%;
+        box-shadow: 2pt 2pt 10pt #ffffffd0;
+    }
+    100%{
+        width: 250px;
+        height: 250px;
+    }
+}
+
+.animacion2{
+    animation-name: efecto2;
+    animation-iteration-count: 1; /*le pongo cuantas veces quiero que se repita*/
+    animation-timing-function: linear;
+    animation-duration: 4s; /*cuanto quiero que dure*/
+    animation-delay: 4s; /*cuando quiero que arranque la animacion*/
+}
+/*Linea del tiempo de la animacion*/
+@keyframes efecto2{
+    0% {width: 250px;
+        height: 250px;
+
+    }
+    25%{
+        width: 200px;
+        height: 200px;
+    }
+    50%{
+        width: 150px;
+        height: 150px;
+        border-radius: 3%;
+        box-shadow: 2pt 2pt 10pt #ffffffd0;
+    }
+    75%{
+        width: 200px;
+        height: 200px;
+        border-radius: 3%;
+        box-shadow: 2pt 2pt 10pt #ffffffd0;
+    }
+    100%{
+        width: 250px;
+        height: 250px;
+    }
+}
+
+
+/*imagenes del index y de galeria*/
+.radiusTodo {
+    border-radius: 2%;
+}
+/*imagenes del index*/
+.radiusIzquierdo {
+    border-radius: 5% 0 0 5%;   /*VER DE SACARLO*/
+}
+
+.radiusDerecho {
+    border-radius: 0 5% 5% 0;   /*VER DE SACARLO*/
+}
+
+.radiusArriba {
+    border-radius: 5% 5% 0 0;   /*VER DE SACARLO*/
+}
+/*imagenes de galeria*/
+.radiusArribaIzquierda {
+    border-radius: 5% 0 0 0;
+}
+
+.radiusArribaDerecha {
+    border-radius: 0 5% 0 0;
+}
+/*tambien estan en el index*/
+.radiusAbajoDerecha {
+    border-radius: 0 0 5% 0;
+}
+
+.radiusAbajoIzquierda {
+    border-radius: 0 0 0 5%;
+}
+
+/*bootstrap con javascripr/ envios*/
+.cuadroDialogo{
+    color: black;
+}
+
+/*footer*/
+.redesSociales a {
+    text-decoration: none;
+    color: white;
+    width: 50pt;
+   
+}
+
+.degradadoFooter{
+    
+    background-image: radial-gradient(rgb(231, 225, 225), rgb(143, 132, 132), rgba(80, 72, 72, 0.712), black);
+}
+footer a:link{
+    color: rgba(255, 255, 255, 0.774);
+    transition: all 3s;
+}
+
+footer a:hover{
+    color: rgb(85, 149, 185);
+    font-size: 14pt;
+}
+
+.iconos{
+    margin: 2% 10%;
+    padding: 1%;
+    display: inline-block;
+}
+
+.footerPegado {
+    position: sticky;
+}
+
+/*flexbox*/
+.flexFooter{
+    display: flex;
+    flex-flow:nowrap;
+    justify-content: center;
+}
+
+
+/*MEDIA QUERIES*/
+@media (max-width:767px){
+    .tamañoSm {
+        width: 180px;
+        height: 300px;
+        
+    }
+    .smNoVer{
+        display: none;
+    }
+    .animacion{
+        animation:none;
+    }
+     
+    .transformacion{
+        transform: none;
+    }
+
+    .animacion2{
+        animation:none;
+    }
+     
+    .transformacion{
+        transform: none;
+    }
+}
+
+@media(min-width:768px) and (max-width:991px){
+    .mdNoVer{
+        display: none;
+    }
+
+    .lgNoVer{
+        display: inline-block;
+    }
+   
+    
+}
+@media(min-width:992px) and (max-width:1199px) {
+    .lgNoVer{
+        display: none;
+    }
+
+    
+}
+@media(min-width:1200px){
+    .mdNoVer{
+        display: inline-block;
+    }
+
+    .lgNoVer{
+        display: inline-block;
+    }
+}

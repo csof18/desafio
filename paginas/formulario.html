@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!--css mio-->
+    <link rel="stylesheet" href="../assets/css/desafios.css">
+    
+    <!--SEO-->
+    <meta name="keywords" content="informacion, contacto">
+    <title>Contacto/Amelia Plantas y Flores</title>
+    <meta name="description" content="Somos una floreria,estamos ubicados en Villa Devoto, frente a la plaza Arenales nos destacamos por nuestros ramos, plantas y regaleria">
+</head>
+<body>
+    <!--menu bootstrap-->   
+    <header>
+        <ul class="nav nav-tabs mt-5 ">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./nuestrosPrecios.html">Precios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./formulario.html">Contactanos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./envio.html">Envios</a>
+            </li>
+        </ul>
+    </header>
+
+    <!--Formulario con bootstrap-->
+    <section class="justificado tamaño margen">
+        <div class="border-bottom mt-5">
+            <h2 >Contactanos </h2>
+        </div>
+        <div class="border mt-5">
+            <form class="needs-validation m-4" novalidate>
+                <div class="form-row">
+                  <div class="col-md-6 mb-3">
+                    <label for="validationCustom01">Nombre completo</label>
+                    <input type="text" class="form-control" id="validationCustom01" required>
+                    <div class="valid-feedback">
+                      Muy bien!
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="validationCustom02">Apellido</label>
+                    <input type="text" class="form-control" id="validationCustom02" required>
+                    <div class="valid-feedback">
+                      Muy bien!
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                      <label for="exampleInputEmail1">Email</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1"placeholder="nombre@ejemplo.com" aria-describedby="emailHelp">
+                      <small id="emailHelp" class="form-text text-muted">Nunca compartiremos su correo electrónico con nadie más.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="validationCustom03">Telefono</label>
+                        <input type="text" class="form-control"         id="validationCustom03" placeholder="11 12345678" required>
+                        <div class="invalid-feedback">
+                            Proporcione un telefono.
+                        </div>
+                    </div>
+                </div>
+
+
+                Que producto estaba buscando?
+                <div class="form-check ml-5">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                        Ramos
+                    </label>
+                </div>
+                <div class="form-check ml-5">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                    <label class="form-check-label" for="exampleRadios2">
+                      Plantas
+                    </label>
+                </div>
+                <div class="form-check ml-5">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                    <label class="form-check-label" for="exampleRadios2">
+                        Macetas
+                    </label>
+                </div>
+                <div class="form-check ml-5">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                    <label class="form-check-label" for="exampleRadios2">
+                        Velas
+                    </label>
+                </div>
+                <div class="custom-control custom-switch m-2">
+                    <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                    <label class="custom-control-label" for="customSwitch1">Desea recibir newsletter?</label>
+                </div>
+                <button class="btn btn-light m-2" type="reset">Borrar</button>
+                <button class="btn btn-light m-2" type="submit">Enviar</button>
+            </form>
+        </div> 
+        <script>
+          // Example starter JavaScript for disabling form submissions if there are invalid fields
+          (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+              // Fetch all the forms we want to apply custom Bootstrap validation styles to
+              var forms = document.getElementsByClassName('needs-validation');
+              // Loop over them and prevent submission
+              var validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                  if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                  }
+                  form.classList.add('was-validated');
+                }, false);
+              });
+            }, false);
+          })();
+        </script>
+    </section>
+
+    <!--Footer-->
+    <footer class="tamaño mt-5 footerPegado">
+        <div class="border-bottom">
+            <h2>Encontranos</h2>
+        </div>
+        <div class="redesSociales m-5 flexFooter">
+            <a href="https://www.instagram.com/ameliaplantasyflores/?igshid=1rbdxyvxvo9dt" target="_blank" class="iconos" >Instagram</a>
+            <a href="https://www.facebook.com/Amelia-Plantas-y-Flores-100927535408509" target="_blank" class="iconos" >Facebook</a>
+            <a href="https://accounts.google.com/AccountChooser?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&flowName=GlifWebSignIn&flowEntry=AccountChooser" target="_blank" class="iconos" >Mail</a>
+        </div>
+    </footer>
+    
+    
+    
+    
+    
+   
+        
+    <!--javascript de bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>

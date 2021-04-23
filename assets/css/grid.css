@@ -1,0 +1,400 @@
+*{
+    margin: 0px;
+    padding: 0;
+}
+section{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.808);
+    color: white;
+}
+/* preguntar porque se deberia aclarar
+.seccion1> div{
+    display: block;
+}
+*/
+
+/*CLASES GENERALES DE GRID*/
+section .logo{
+    text-align: left;
+    grid-area: logo;
+    font-size: 20pt;
+}
+section .encabezador{
+    grid-area: encabezador;
+}
+section .navegador{
+    grid-area: navegador;
+}
+
+section .titulo{
+    grid-area: titulo;
+}
+
+section .contenido{
+    grid-area: contenido;
+    /* border: double black;
+    justify-self: center;
+    align-self: center;
+    border-radius: 5%;
+    text-align: justify;*/
+}
+
+section .imgArriba{
+    grid-area: imgArriba;
+    /*justify-self: center;
+    align-self: center;*/
+}
+
+section .imgIzquierda{
+    grid-area: imgIzquierda;
+}
+
+section .imgDerecha{
+    grid-area: imgDerecha;
+}
+
+/*es lo mismo que escriba section + class o solo class como aca.*/
+.imagenes{
+    grid-area: imagenes;
+}
+.piePagina{
+    grid-area: piePagina;
+}
+
+
+/*CLASES GENERALES*/
+h1 {
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    font-weight: 300;
+}
+
+h2 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    font-size: 20pt;
+    margin-left: 1%;
+}
+
+.justificado{
+    text-align: justify;
+}
+
+.tamaño {
+    font-size: 16pt;
+}
+
+.margen {
+    margin: 2%;
+}
+.margenTop {
+    margin-top: 2%;
+}
+.bordeInterno{
+    padding: 2%;
+}
+.sinExcedente{
+    overflow: hidden;
+}
+
+/*BORDES DE IMAGENES*/
+.radiusTodo {
+    border-radius: 2%;
+}
+.radiusArriba {
+    border-radius: 5% 5% 0 0;
+}
+.radiusAbajoDerecha {
+    border-radius: 0 0 5% 0;
+}
+
+.radiusAbajoIzquierda {
+    border-radius: 0 0 0 5%;
+}
+.sombra{
+    box-shadow: 2pt 2pt 10pt  #ffffffd0;
+}
+/*NAVEGADOR*/
+    nav {
+        font-family: 'Nunito', sans-serif;
+        font-style: italic;
+        font-weight: 200;
+        text-align: right;
+    
+    }
+    
+    nav a{
+        outline: none;
+        text-decoration: none;
+        padding: 2pt 1pt 0;
+    }
+    
+    nav a:link{
+        color: rgba(255, 255, 255, 0.959);
+    }
+    
+    nav a:visited {
+        color: rgba(171, 208, 214, 0.644);    
+    }
+    nav a:hover {
+        color: rgb(107, 102, 102);
+    }
+    
+    .lista {
+        list-style: none;
+    }
+    /*box model*/
+.navFlotante {
+    float: left;
+}    
+
+nav ul {
+    list-style-type: none;
+    margin-top: -5px;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+}
+
+li a {
+    display: block;
+    padding: 10px;
+    
+}
+
+/*con estos codigos logro que el submenu se vea solo cuando me ubico en él*/
+li:hover > ul{
+    display: block;
+    margin-top: -5px;
+    padding: 1px;
+}
+
+li ul{
+    display: none;
+    position: absolute;
+}
+.submenu {
+    padding: 0 5px;
+}
+
+li > ul li a{
+    margin-left: -4px;    
+}
+
+/*FOOTER*/
+.redesSociales a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:link{
+    color: rgba(255, 255, 255, 0.774);
+}
+
+footer a:hover{
+    color: rgba(143, 140, 140, 0.671);
+}
+
+.iconos{
+    margin: 0 10%;
+    padding: 1%;
+    display: inline-block;
+}
+
+.footerPegado {
+    position: sticky;
+}
+/*flexbox*/
+.flexFooter{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+    /*CLASES  PARA QUE NO SE VEA*/
+    
+@media(max-width:599px){
+    .seccion1{
+        display: grid;
+        /*grid-row-gap:10px;          forma corta --> */
+        /*grid-column-gap:10px;       grid-gap:10px;*/
+        grid-template-columns: 1fr 1fr 1fr 1fr; /*repeat(4, 1fr);*/
+        grid-template-rows: repeat(7, auto);
+        grid-template-areas:
+        
+        "logo           logo            logo            logo"
+        "navegador      navegador       navegador       navegador"
+        "encabezador    encabezador     encabezador     encabezador"
+        "titulo         titulo          titulo          titulo"
+        "contenido      contenido       contenido       contenido"
+        "imgArriba      imgArriba       imgArriba       imgArriba"
+        "imgIzquierda   imgIzquierda    imgDerecha      imgDerecha"
+        "piePagina      piePagina       piePagina       piePagina"
+        ;
+    }
+    .tamañoChico{
+        display: block;
+    }
+    .tamañoMediano{
+        display: none;
+    }
+    .tamañGrande{
+        display: none;
+    }
+    .tamañoMuyGrande{
+        display: none;
+    }
+    .sinImg{
+        display: none;
+    }
+}
+
+@media(min-width:600px){
+    .seccion1{
+        display: grid;
+        /*grid-row-gap:10px;          forma corta --> */
+        /*grid-column-gap:10px;       grid-gap:10px;*/
+        grid-template-columns: 1fr 1fr 1fr 1fr; /*repeat(4, 1fr);*/
+        grid-template-rows: repeat(6, auto);
+        grid-template-areas:
+        "logo           navegador       navegador       navegador"
+        "titulo         titulo          titulo          titulo"
+        "contenido      contenido       imgArriba       imgArriba"
+        "contenido      contenido       imgIzquierda    imgDerecha"
+        "imagenes       imagenes        imagenes        imagenes"
+        "piePagina      piePagina       piePagina       piePagina"
+        ;
+    }
+    .sinEncabezado{
+        display: none;
+    }
+    .tamañoChico{
+        display: none
+    }
+    .tamañoMediano{
+        display: block;
+    }
+    .tamañGrande{
+        display: none;
+    }
+    .tamañoMuyGrande{
+        display: none;
+    }
+}
+
+@media(min-width:769px){
+
+    .seccion1{
+        display: grid;
+        /*grid-row-gap:10px;          forma corta --> */
+        /*grid-column-gap:10px;       grid-gap:10px;*/
+        grid-template-columns: 1fr 1fr 1fr 1fr; /*repeat(4, 1fr);*/
+        grid-template-rows: repeat(auto-fit, auto);
+        grid-template-areas:
+        "logo           logo            logo            logo"
+        "navegador      navegador       navegador       navegador"
+        "titulo         titulo          titulo          titulo"
+        "contenido      contenido       imgArriba       imgArriba"
+        "contenido      contenido       imgIzquierda    imgDerecha"
+        "imagenes       imagenes        imagenes        imagenes"
+        "piePagina      piePagina       piePagina       piePagina"
+        ;
+    }
+    .sinEncabezado{
+        display: none;
+    }
+    .tamañoChico{
+        display: none;
+    }
+    .tamañoMediano{
+        display: none;
+    }
+    .tamañGrande{
+        display: inline-block;
+    }
+    .tamañoMuyGrande{
+        display: none;
+    }
+}
+
+@media(min-width:1200px){
+    .seccion1{
+        display: grid;
+        /*grid-row-gap:10px;          forma corta --> */
+        /*grid-column-gap:10px;       grid-gap:10px;*/
+        grid-template-columns: 1fr 1fr 1fr 1fr; /*repeat(4, 1fr);*/
+        grid-template-rows: repeat(auto-fit, auto);
+        grid-template-areas:
+        "logo           logo            logo            logo"
+        "navegador      navegador       navegador       navegador"
+        "titulo         titulo          titulo          titulo"
+        "contenido      contenido       imgArriba       imgArriba"
+        "contenido      contenido       imgIzquierda    imgDerecha"
+        "imagenes       imagenes        imagenes        imagenes"
+        "piePagina      piePagina       piePagina       piePagina"
+        ;
+    }
+    .sinEncabezado{
+        display: none;
+    }
+    .tamañoChico{
+        display: none;
+    }
+    .tamañoMediano{
+        display: none;
+    }
+    .tamañGrande{
+        display: inline-block;
+    }
+    .tamañoMuyGrande{
+        display: inline;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*section.grilla > div{
+    background-color: turquoise;
+    
+    display: block;
+}
+
+section.seccion2 > div{
+    border: 2px solid tomato;
+    margin: 5px;
+}
+
+.grilla{
+    width: 50%;
+}
+
+/*GRID
+.grilla{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: minmax(50px, auto) 3fr; /*se suele usar el auto como maximo, para que no desborde el contenido.
+    grid-gap: 20px; /*espaciado entre elementos
+}
+*/

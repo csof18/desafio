@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--Bootstrap-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    
+        <!--archivo css-->
+        <link rel="stylesheet" href="../assets/css/desafios.css">
+        
+        <!--tipografia-->
+        <link rel = "preconnect" href = "https://fonts.gstatic.com">
+        <link href = "https://fonts.googleapis.com/css2? family = Akaya + Telivigala & display = swap" rel = "hoja de estilo">
+        
+        <!--SEO-->
+        <meta name="keywords" content="ubicacion, envios">
+        <title>Envios/Amelia Plantas y Flores</title><meta name="description" content="Somos una floreria,estamos ubicados en Villa Devoto, frente a la plaza Arenales nos destacamos por nuestros ramos, plantas y regaleria">
+    </head>
+
+    <body>
+        <header>
+            <div>
+                <nav class="tamaño m-5">
+                    <ul class="lista">
+                        <!--volver al index, para salir de una carpeta agrego un . -->
+                        <li class="navFlotante"><a href="../index.html">Inicio</a></li>
+
+                        <li class="navFlotante"><a href="./productos.html">Productos</a></li>
+                        <li class="navFlotante"><a href="./nuestrosPrecios.html">Precios</a></li>
+                        <li class="navFlotante"><a href="./formulario.html">Contactanos</a></li>
+                        <li class="navFlotante"><a href="./envio.html">Envios</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    
+        <section class="justificado tamaño">
+            <div class="border-bottom mt-5">
+                <h2>Envios</h2>
+            </div>
+
+            <div class="mt-5">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d821.0495384975192!2d-58.51063687078015!3d-34.59915049877881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb7cb5e02eaad%3A0x53b51b519fd0bd60!2sNueva%20York%203801-3899%2C%20C1419HDK%20CABA!5e0!3m2!1ses!2sar!4v1615511809321!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="m-5">
+                <p>Estamos en Nueva York 3052, Villa Devoto, CABA,</p>
+                <p>entre Chivilcoy y Bahia Blanca. (Frente a Plaza Arenales)</p> 
+            </div>
+        </section>
+
+        <!--probando bootstrap-->
+        <section class="cuadroDialogo">
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-light m-5" data-toggle="modal" data-target="#exampleModal">
+                Calcula tu envío
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Calcular costo del envío</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Ingrese su codigo de area
+                            <div class="formularioWrap mt-2">
+                                <label for="codigoArea">Código de área </label>
+                                <input class="centrado" type="text" placeholder="1234">
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-secondary">Calcular</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!--Footer-->
+        <footer class="tamaño mt-5 footerPegado">
+            <div class="border-bottom mt-5">
+                <h2>Contactanos</h2>
+            </div>
+
+            <div class="redesSociales m-5 flexFooter">
+                <a href="https://www.instagram.com/ameliaplantasyflores/?igshid=1rbdxyvxvo9dt" target="_blank" class="iconos" >Instagram</a>
+                <a href="https://www.facebook.com/Amelia-Plantas-y-Flores-100927535408509" target="_blank" class="iconos" >Facebook</a>
+                <a href="#" target="_blank" class="iconos" >Mail</a>
+            </div>
+        </footer>
+
+        <!--Javascript bootstrap-->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    </body>
+</html>
